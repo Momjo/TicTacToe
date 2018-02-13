@@ -1,12 +1,14 @@
 
 public enum Spieler {
-	X, O;
+	X, O, leer;
 	
 	public String toString() {
 		if (this == X) {
 			return "X";
-		} else {
+		} else if (this == O) {
 			return "O";
+		}else {
+			return " ";
 		}
 	}
 }
